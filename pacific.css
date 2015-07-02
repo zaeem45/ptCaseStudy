@@ -1,22 +1,72 @@
+
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article 
+{
+  display: block;
+}
+
 body { color: #666666 ;font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; background-image: url(images/ptrbackground.jpg)}
 
-h1 { background-color: #000033; color:#ffffff; background-image: url(images/sunset.jpg); background-repeat:no-repeat ; background-position: right; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; padding-bottom: 0; padding-left: 10px; padding-right: 10px; padding-top: 10px; }
+h1 { background-color: #000033; color:#ffffff; background-image: url(images/sunset.jpg); background-repeat:no-repeat ; background-position: right; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; padding-top: 10px; font-family: Georgia, Times, 'Times New Roman', serif; margin-bottom: 0; }
 
-nav  { background-color: #90C7E3;font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; font-weight: bold;padding-left: 20px; padding-right: 5px; padding-bottom: 5px; padding-top: 5px;}
+nav  { font-weight: bold;}
 
-nav a {text-decoration: none;}
+nav a:link {text-decoration: none; color: #000033; }
+nav a:visited {color: #344873;}
+nav a:hover {color: #ffffff;}
+ul nav {list-style-image: none; list-style-type: none;padding-left: 0px; padding-right:0; padding-bottom: 0px; padding-top: 0px; float: left; width: 160px;}
 
-h2 { color: #3399CC; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; text-shadow: 1px 1px 1px #666666; }
+
+#content { list-style-position: inside; margin-left: 190px; margin-top: 0px; background-color: #FFFFFF; padding-top: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; }
+#img {float: left; padding-right: 20px;}
+
+h2 { color: #3399CC; text-shadow: 1px 1px 1px #666666; font-family: Georgia, Times, 'Times New Roman', serif; }
 
 .resort { color: #5C7FA3; font-weight: bold; } 
 
-h3 { color:#000033; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif }
+h3 { color:#000033; font-family: Georgia, Times, 'Times New Roman', serif;  }
 
 ul {list-style-image: url(images/marker.gif)}
 
-#contact { font-size: 90%;}
+#contact { font-size: 90%; background-color: #FFFFFF;margin-left: 190px}
 
-footer {font-style: italic; font-size: 75%;padding-bottom:20px; padding-top: 20px; padding-left: 20px; padding-bottom: 20px; }
+footer {font-style: italic;background-color: #FFFFFF; font-size: 75%;padding-bottom:20px; padding-top:5px; padding-left: 20px; padding-bottom: 20px; clear:left; margin-left: 190px; font-family: Georgia, Times, 'Times New Roman', serif; }
 
-#wrapper {  background-color: #FFFFFF;
-    width: 80%; min-width: 960px; margin-left: auto; margin-right: auto; box-shadow: 5px 5px 5px #000033; padding-top: 1px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;}
+#gallery {position: relative; height: 200px; }
+#gallery ul {list-style-image: none; list-style-type: none; width: 250px;}
+#gallery li {display: inline; float: left; padding: 10px 10px 10px 10px; }
+#gallery img {float: none;padding: 0; }
+#gallery span {display: none}
+#gallery a:hover span{ display: block; position: absolute; top: 15px; left: 320px; text-align: center;}
+#placeholder { position: absolute; top: 15px; left: 320px; opacity: .25;} 
+
+
+#wrapper {   background-color: #90C7E3;
+    width: 80%; min-width: 960px; margin-left: auto; margin-right: auto; box-shadow: 5px 5px 5px #000033;}
+
+@media only screen and (max-width: 768px)
+{ body {margin: 0;}
+    #wrapper { min-width: 0; width: auto; box-shadow: none; }
+    nav { float: none; width: auto; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;}
+    ul nav { padding-left: 10px; margin-top: 0.5em; margin-bottom: 0.5em; text-align: center;}
+    li nav { display: inline; padding-bottom: 0; padding-top: 0; padding-left: 0.75em; padding-right: 0.75em; }
+    #content { margin-left: 0;}
+    footer {margin-left: 0;}
+}
+
+@media only screen and (max-width: 480px) {
+    h1 { padding-left: 0.3em; margin: 0; font-size: 1.5em; }
+    #content img { float: none; padding: 0; margin: 0.1em; }
+    #content ul { list-style-position: outside; }
+    #content { padding: 0.1em 1em 0.1em; margin: 0; font-size: 90%; }
+    nav a { display: block; }
+    nav ul { text-align: center; padding: 0; margin: 0; }
+    nav li { display: block; margin: 0; padding: 0.3em; border: 2px solid #330000; }
+    
+   
+    
+
+}
+
+
+

@@ -4,20 +4,27 @@
     <title>Activities</title>
     <link rel="stylesheet" href="pacific.css" />
     <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+    <![endif]-->
 </head>
 <body>
     <div id = "wrapper">
     <header>
         <h1>Pacific Trails Resort</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a> 
-        <a href="yurts.html">Yurts</a>
-        <a href="activities.html">Activities</a>
-        <a href="reservations.html">Reservations</a></nav>
+    <ul>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yurts.html">Yurts</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </nav>
+    </ul>
+    
     <div id="content">
         <h2>The Activities at Pacific Trails</h2>
-        <img src="images/trail.jpg" height="250" width="320" alt="Trail image">
+        <img src="images/trail.jpg" id="img"  alt="Trail image">
     <h3>Hiking</h3>
     <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park. Go it alone or           join one of our guided hikes.</p>
     <h3>Kayaking</h3>
@@ -25,10 +32,26 @@
     <h3>Bird Watching</h3>
     <p>While anytime is a good time for bird watching at Pacific Trails, we offer guided birdwatching trips
         at sunrise several times a week.</p>
+    <div id = "gallery">
+        <img src="images/photo5.jpg" id= "placeholder" height="150" width="200" alt="somepicture">
+        
+        <ul>
+            <li><a href="images/photo2.jpg"><img src="images/photo2thumb.jpg" height="75" width="100" alt="Rocky Coastline">
+                <span> <img src= "images/photo2.jpg" height="150" width="200" alt="Rocky Coastline"> </span></a></li>
+            <li><a href="images/photo3.jpg"><img src ="images/photo3thumb.jpg" height="75" width="100" alt="Clouds Moving">
+                <span> <img src="images/photo3.jpg" height="150" width="200" alt="Clouds Moving"> </span></a></li>
+            <li><a href="images/photo4.jpg"><img src="images/photo4thumb.jpg" height="75" width="100" alt="Turquoise Waters">
+                <span> <img src="images/photo4.jpg" height="150" width="200" alt="Turquoise Waters"> </span></a></li>
+            <li><a href="images/photo6.jpg"> <img src="images/photo6thumb.jpg" height="75" width="100" alt="Sunset on the coast">
+                <span> <img src="images/photo6.jpg" height="150" width="200" alt="Sunset on the coast"> </span></a></li>
+            
+        </ul>
+        
+        </div>
     </div>
     <footer>
-        <p><i>Copyright &copy; 2014 Pacific Trails Resort<br>
-            <a href= "mailto:serghei@sandin.com">serghei@sandin.com</a></i></p>
+        <p>Copyright &copy; 2014 Pacific Trails Resort<br>
+            <a href= "mailto:serghei@sandin.com">serghei@sandin.com</a></p>
     </footer>
     </div>
 </body>
